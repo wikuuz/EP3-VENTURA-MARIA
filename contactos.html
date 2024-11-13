@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos - Fifty Cats</title>
+    <link rel="stylesheet" href="contactos.css">
+    <link rel="icon" href="img/cat.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <h1>fifty cats</h1>
+    <nav>
+        <a href="index.html">INICIO <i class="fas fa-home"></i></a>
+        <a href="nosotros.html">NOSOTROS <i class="fas fa-cat"></i></a>
+        <a href="blog.html">BLOG <i class="fas fa-pencil-alt"></i></a>
+        <a href="galeria.html">GALERÍA<i class="fas fa-images"></i></a>
+        <a href="videos.html">VIDEOS <i class="fas fa-video"></i></a>
+        <a href="contactos.html">CONTACTOS <i class="fas fa-envelope"></i></a>
+    </nav>
+</header>
+
+<main>
+    <section class="contact-info">
+        <h2>Información de Contacto</h2>
+        <table>
+            <tr>
+                <td><strong>Dirección:</strong></td>
+                <td>Jr. Catnip 123, Lima, Perú</td>
+            </tr>
+            <tr>
+                <td><strong>Teléfonos:</strong></td>
+                <td>999 888 777</td>
+            </tr>
+            <tr>
+                <td><strong>Email:</strong></td>
+                <td>info@fiftycats.com</td>
+            </tr>
+        </table>
+        <h3>Horario de Atención Presencial</h3>
+        <table>
+            <tr>
+                <td>De Lunes a Viernes</td>
+                <td>9am a 5pm</td>
+            </tr>
+        </table>
+        <div class="degradado-img">
+            <img src="img/contacto.jpg" alt="Imagen de contacto">
+          </div>
+        
+    </section>
+
+    <section class="contact-form">
+        <h2>Déjanos tu comentario</h2>
+        <form action="#">
+            <label for="name">Nombre y Apellido*</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Celular*</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Correo electrónico*</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="company">RUC - Empresa (Opcional)</label>
+            <input type="text" id="company" name="company">
+
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message"></textarea>
+
+            <button type="submit">ENVIAR</button>
+        </form>
+    </section>
+
+    <div id="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.566906338091!2d-76.95062432485888!3d-12.073291642395315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c6e435a93c41%3A0xcdaaa71f277efd64!2sInstituto%20San%20Ignacio%20de%20Loyola%20(ISIL)!5e0!3m2!1ses!2spe!4v1729517064183!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+</div>
+</section>
+</main>
+
+<footer>
+<p>&copy; 2024 Fifty Cats. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>

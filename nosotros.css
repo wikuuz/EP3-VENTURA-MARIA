@@ -1,0 +1,139 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del encabezado */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff7096; /* Color de fondo del encabezado */
+}
+
+.logo {
+    font-size: 2.5em;
+    font-family: 'Georgia', serif;
+    color: rgb(239, 11, 182);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(237, 51, 137);
+    font-weight: bold;
+}
+
+/* Sección Nosotros */
+.nosotros {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffbfd0; 
+}
+
+.nosotros h2 {
+    background-color: #ff7096;
+    color: white;
+    padding: 10px;
+    font-size: 2em;
+}
+
+/* Contenedor de la sección con Grid */
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 20px; 
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    grid-template-areas: 
+        "texto imagen-vertical"; 
+}
+
+
+.texto {
+    background-color: #ffe6ec;
+    padding: 20px;
+    border-radius: 5px;
+    grid-area: texto;  
+}
+
+
+.imagenes-abajo {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    grid-column: 1 / 2; 
+}
+
+.imagen, .imagen-secundaria {
+    width: 48%; 
+}
+
+.imagen img, .imagen-secundaria img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen vertical en la esquina */
+.imagen-vertical {
+    grid-column: 2 / 3; 
+    grid-row: 1 / 3; 
+    margin-top: 20px;
+}
+
+.imagen-vertical img {
+    width: 100%;   
+    height: auto;  
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de las imágenes para efectos de hover */
+.imagen img, .imagen-secundaria img, .imagen-vertical img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagen img:hover, .imagen-secundaria img:hover, .imagen-vertical img:hover {
+    transform: scale(1.05);
+}
+
+/* Ajustes para la imagen vertical en pantalla */
+.imagen-vertical img {
+    max-width: 100%;
+    object-fit: cover;  /* Hace que la imagen ocupe toda el área sin distorsionarse */
+}
+/* Efecto hover para imágenes */
+.imagen img, .imagen-secundaria img, .imagen-vertical img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagen img:hover, .imagen-secundaria img:hover, .imagen-vertical img:hover {
+    transform: scale(1.05);
+}
+
+/* Pie de página */
+footer {
+    background-color: #ff7096;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.redes-sociales a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5em;
+}

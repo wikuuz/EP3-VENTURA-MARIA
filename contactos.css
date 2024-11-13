@@ -1,0 +1,196 @@
+/* Fuente y colores */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, rgb(255, 126, 168) 25%, #ffa0bd 50%, #ffc1d3 75%, rgb(255, 224, 233) 100%);
+
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Asegura que el fondo cubra toda la altura de la ventana */
+}
+
+
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #ffccdd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil en el header */
+    border-bottom: 2px solid #ff99b8; /* Línea de separación */
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    margin: 1;
+    color: #ff6699;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: bounce 1s infinite; /* Animación de rebote en el título */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+nav a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease; /* Transición suave en color */
+}
+
+nav a:hover {
+    color: #ff6699;
+    text-decoration: underline; /* Subrayado en hover */
+}
+
+nav a.active {
+    font-weight: bold;
+    color: #ff6699;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.contact-info, .contact-form {
+    width: 45%;
+    background: #ffe6f0;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto de transformación */
+}
+
+.contact-info:hover, .contact-form:hover {
+    transform: translateY(-5px); /* Efecto hover para levantar el contenido */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Efecto de sombra más fuerte */
+}
+
+.contact-info table {
+    width: 100%;
+    margin-bottom: 10px;
+    border-collapse: collapse;
+}
+
+.contact-info td {
+    padding: 8px;
+    border: 1px solid #ff99b8;
+}
+
+.contact-info h3 {
+    margin-top: 20px;
+}
+
+.contact-info img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Suavizado de imagen */
+}
+
+.contact-info img:hover {
+    transform: scale(1.05); /* Zoom de la imagen al pasar el cursor */
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ff99b8;
+    border-radius: 10px; /* Bordes más redondeados */
+    transition: border-color 0.3s ease; /* Efecto de borde suave */
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #ff6699; /* Color de borde al enfocar */
+    outline: none; /* Eliminar outline predeterminado */
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff6699;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Suavizado del color de fondo */
+}
+
+.contact-form button:hover {
+    background-color: #ff3385; /* Color de fondo al hacer hover */
+}
+
+#mapa {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffccdd;
+    font-size: 0.9em; /* Fuente más pequeña en el footer */
+}
+
+footer a img {
+    width: 30px;
+    margin: 0 10px;
+    vertical-align: middle;
+    transition: transform 0.3s ease; /* Efecto en las imágenes */
+}
+
+footer a img:hover {
+    transform: scale(1.1); /* Zoom al pasar el cursor */
+}
+
+.degradado-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35dvh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.degradado-img img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.social-icons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-icon {
+    margin: 0 15px;
+    color: #333;
+    font-size: 30px; /* Tamaño aumentado para los íconos */
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease; /* Efecto de transición */
+}
+
+.social-icon:hover {
+    color: #ff6699;
+    transform: scale(1.2); /* Efecto de aumento al pasar el cursor */
+}
